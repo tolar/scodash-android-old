@@ -1,0 +1,20 @@
+{
+	"name": "MyTeam",
+	"description": "Dash board of my team",
+	"items": [
+		{
+			"name": "Vasek",
+			"score": 1
+		},
+		{
+			"name": "Marian",
+			"score": 3
+		},
+		{
+			"name": "Lojza",
+			"score": 0
+		}
+	],
+	"ownerName": "string",
+	"ownerEmail": "string"
+}

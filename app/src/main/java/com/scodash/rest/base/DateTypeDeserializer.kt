@@ -1,4 +1,4 @@
-package com.scodash.rest
+package com.scodash.rest.base
 
 
 import com.google.gson.JsonDeserializationContext
