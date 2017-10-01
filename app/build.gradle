@@ -51,25 +51,27 @@ android {
             applicationIdSuffix ".mock"
             versionNameSuffix "-mock"
             resValue "string", "app_name", "Scodash (Mock)"
+            buildConfigField "String", "REST_BASE_URL", "\"\""
         }
         production {
             dimension = "env"
             resValue "string", "app_name", "Scodash"
+            buildConfigField "String", "REST_BASE_URL", "\"https://scodash.com/\""
         }
     }
 
-    sourceSets {
-        mock {
-            java {
-                srcDirs('src/server/java')
-            }
-        }
-        production {
-            java {
-                srcDirs('src/server/java')
-            }
-        }
-    }
+//    sourceSets {
+//        mock {
+//            java {
+//                srcDirs('src/mock/java')
+//            }
+//        }
+//        production {
+//            java {
+//                srcDirs('src/production/java')
+//            }
+//        }
+//    }
 
     buildTypes {
         debug {
@@ -177,6 +179,8 @@ dependencies {
 
     compile 'org.parceler:parceler-api:1.1.9'
     kapt 'org.parceler:parceler:1.1.9'
+
+    compile 'com.jakewharton.timber:timber:4.5.1'
 
     /**
      *  UNIT-TEST UNIT-TEST UNIT-TEST UNIT-TEST UNIT-TEST UNIT-TEST UNIT-TEST UNIT-TEST UNIT-TEST UNIT-TEST UNIT-TEST

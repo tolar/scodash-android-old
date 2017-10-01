@@ -1,7 +1,8 @@
-package com.scodash
+package com.scodash.ui
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import com.scodash.R
 
 class MainActivity : AppCompatActivity() {
 
