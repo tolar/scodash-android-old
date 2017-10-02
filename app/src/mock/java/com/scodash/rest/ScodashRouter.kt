@@ -6,20 +6,15 @@ import com.scodash.rest.base.RetrofitMockClient
 import io.reactivex.Single
 import retrofit2.Call
 import retrofit2.Response
+import retrofit2.mock.BehaviorDelegate
 import retrofit2.mock.Calls
 import java.io.IOException
 
 open class ScodashRouter : ScodashBaseRouter {
 
-	//var mockDelegate: BehaviorDelegate<ScodashRouter>
-
-	init {
-//		mockDelegate = RetrofitMockClient().getMockDelegate(ScodashRouter::class.java)
-	}
+	private var mockDelegate: BehaviorDelegate<ScodashBaseRouter> = RetrofitMockClient().getMockDelegate(ScodashBaseRouter::class.java)
 
 	override fun getScoreDashList(userId: Int): Single<Response<ScoreDash>> {
-
-		var mockDelegate = RetrofitMockClient().getMockDelegate(ScodashBaseRouter::class.java)
 
 		var response: Call<ScoreDash> = Calls.failure(IOException("Failed"))
 
