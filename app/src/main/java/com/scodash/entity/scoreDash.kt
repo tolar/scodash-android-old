@@ -1,14 +1,16 @@
 package com.scodash.entity
 
+import com.google.gson.annotations.SerializedName
+
 data class ScoreDash(
-		val name: String,
-		val description: String,
-		val itemList: List<ScoreDashItem>,
-		val ownerName: String,
-		val ownerEmail: String
+		@SerializedName("name") val name: String,
+		@SerializedName("description") val description: String,
+		@SerializedName("items") val itemList: List<ScoreDashItem>,
+		@SerializedName("ownerName") val ownerName: String,
+		@SerializedName("ownerEmail") val ownerEmail: String
 )
 
 data class ScoreDashItem(
-		val name: String,
-		val score: Int
+		@SerializedName("name") val name: String,
+		@SerializedName("score") val score: Int
 )
