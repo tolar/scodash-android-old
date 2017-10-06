@@ -10,7 +10,6 @@ apply plugin: 'kotlin-kapt'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'io.fabric'
-apply plugin: 'realm-android'
 
 kapt {
     correctErrorTypes = true // avoid unknown type replacing with NonExistentClass
