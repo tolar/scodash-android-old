@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools">
+
+	<data>
+
+		<import type="com.scodash.ui.utility.BindingUtility.RecyclerLayout" />
+		<import type="com.scodash.ui.utility.BindingUtility.RecyclerAnimator" />
+		<import type="com.scodash.ui.utility.BindingUtility.RecyclerDecoration" />
+
+
+		<variable
+			name="view"
+			type="com.scodash.ui.MainView" />
+
+		<variable
+			name="viewModel"
+			type="com.scodash.ui.MainViewModel" />
+
+	</data>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical">
+
+		<android.support.design.widget.AppBarLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<android.support.v7.widget.Toolbar
+				android:id="@+id/appToolbar"
+				android:layout_width="match_parent"
+				android:layout_height="?attr/actionBarSize"
+				app:theme="@style/ThemeOverlay.AppCompat.Scodash.ActionBar" />
+		</android.support.design.widget.AppBarLayout>
+
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:orientation="vertical">
+
+			<TextView
+				android:id="@+id/header"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="@dimen/global_spacing_4"
+				android:layout_marginBottom="@dimen/global_spacing_4"
+				android:layout_marginTop="@dimen/global_spacing_4"
+				android:gravity="center"
+				android:text="@string/scoreDashItemText" />
+
+			<android.support.v7.widget.RecyclerView
+				android:id="@+id/taxMatterRecycler"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:scrollbars="vertical"
+				app:recyclerAnimator="@{RecyclerAnimator.DEFAULT}"
+				app:recyclerLayout="@{RecyclerLayout.LINEAR_VERTICAL}"
+				app:recyclerDecoration="@{RecyclerDecoration.LINEAR_DIVIDER}"
+				tools:listitem="@layout/score_dash_item" />
+		</LinearLayout>
+	</LinearLayout>
+</layout>

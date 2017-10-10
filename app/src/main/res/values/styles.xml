@@ -9,7 +9,7 @@
 	</style>
 
 
-	<style name="ThemeOverlay.AppCompat.SecurityShow.ActionBar" parent="ThemeOverlay.AppCompat.ActionBar">
+	<style name="ThemeOverlay.AppCompat.Scodash.ActionBar" parent="ThemeOverlay.AppCompat.ActionBar">
 		<!-- Used to for the title of the Toolbar -->
 		<item name="android:textColorPrimary">@color/primaryTextColor</item>
 		<!-- Used to for the title of the Toolbar when parent is Theme.AppCompat.Light -->

@@ -147,7 +147,8 @@ dependencies {
     implementation "com.android.support:recyclerview-v7:$android_support_version"
     implementation "com.android.support:gridlayout-v7:$android_support_version"
 
-    compile "android.arch.lifecycle:extensions:$rootProject.arch_lifecycle_version"
+    implementation "android.arch.lifecycle:extensions:$rootProject.arch_lifecycle_version"
+    implementation "android.arch.lifecycle:reactivestreams:$rootProject.arch_lifecycle_version"
     annotationProcessor "android.arch.lifecycle:compiler:$rootProject.arch_lifecycle_version"
 
     compile "io.reactivex.rxjava2:rxjava:$rxjava_version"

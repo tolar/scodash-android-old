@@ -1,14 +1,19 @@
 package com.scodash
 
 import android.app.Application
+import android.content.Context
 import android.os.StrictMode
 import timber.log.Timber
 
 
 class ScodashApplication : Application() {
 
+	lateinit var context: Context
+
 	override fun onCreate() {
 		super.onCreate()
+
+		ContextProvider.initialize(context)
 
 		if (BuildConfig.DEBUG) {
 

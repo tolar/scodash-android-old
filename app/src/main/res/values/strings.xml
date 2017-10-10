@@ -1,3 +1,4 @@
 <resources>
-	<string name="dummy">dummy string</string>
+	<string name="activityMainHeader">Header...</string>
+	<string name="scoreDashItemText">Text...</string>
 </resources>

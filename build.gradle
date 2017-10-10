@@ -25,6 +25,7 @@ buildscript {
     ext.multidex_version = '1.0.2'
     ext.rxandroid_version = '2.0.1'
     ext.rxjava_version = '2.1.2'
+    ext.arch_lifecycle_rt_version = "1.0.0"
     ext.arch_lifecycle_version = "1.0.0-alpha9-1"
 
     repositories {

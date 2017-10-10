@@ -31,11 +31,6 @@
 	<dimen name="global_font_spacing_4">4sp</dimen>
 	<dimen name="global_font_spacing_8">8sp</dimen>
 
-	<dimen name="account_card_goal_progressbar_4">4dp</dimen>
-	<dimen name="account_card_goal_progressbar_4_lollipop">4dp</dimen>
-	<dimen name="account_card_goal_progressbar_8">8dp</dimen>
-	<dimen name="account_card_goal_progressbar_8_lollipop">8dp</dimen>
-
 	<dimen name="global_text_size_display_4">112sp</dimen>
 	<dimen name="global_text_size_display_3">56sp</dimen>
 	<dimen name="global_text_size_display_2">45sp</dimen>
@@ -55,5 +50,8 @@
 	<dimen name="card_elevation_raised">8dp</dimen>
 
 	<dimen name="card_corner_radius">2dp</dimen>
+
+	<dimen name="activity_horizontal_margin">16dp</dimen>
+	<dimen name="activity_vertical_margin">16dp</dimen>
 
 </resources>
