@@ -6,6 +6,7 @@ import android.arch.lifecycle.ViewModel
 import com.scodash.rest.base.ApiResponse
 import com.scodash.service.ScoreDashService
 
+
 class MainViewModel : ViewModel() {
 
 	private var apiResponse: MediatorLiveData<ApiResponse> = MediatorLiveData()
@@ -17,5 +18,6 @@ class MainViewModel : ViewModel() {
 		}
 		return apiResponse
 	}
+
 
 }

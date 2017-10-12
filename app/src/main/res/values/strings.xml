@@ -1,4 +1,5 @@
 <resources>
 	<string name="activityMainHeader">Header...</string>
 	<string name="scoreDashItemText">Text...</string>
+	<string name="scoreDashList">Score dash list</string>
 </resources>

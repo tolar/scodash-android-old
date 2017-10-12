@@ -9,9 +9,9 @@ import retrofit2.http.Path
 
 interface ScodashBaseRouter {
 
-	@GET("scoreDash")
+	@GET("scoreDash/{user_id}")
 	fun getScoreDashList(@Path("user_id") userId: Int): Single<Response<ScoreDash>>
 
-	@GET("scoreDash")
+	@GET("scoreDash/{user_id}")
 	fun getScoreDashListLive(@Path("user_id") userId: Int): Call<List<ScoreDash>>
 }
