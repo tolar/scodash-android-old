@@ -26,14 +26,14 @@ open class ScodashRouter : ScodashBaseRouter {
 	}
 
 
-	override fun getScoreDashListLive(userId: Int): Call<List<ScoreDash>> {
+	override fun getScoreDashLive(userId: Int): Call<ScoreDash> {
 
-		var response: Call<List<ScoreDash>> = Calls.failure(IOException("Failed"))
+		var response: Call<ScoreDash> = Calls.failure(IOException("Failed"))
 
 		javaClass.classLoader.getResourceAsStream("scodash_data_mock.json").bufferedReader().use {
-			response = Calls.response(RetrofitClient().createGson().fromJson<List<ScoreDash>>(it.readText(), ScoreDash::class.java))
+			response = Calls.response(RetrofitClient().createGson().fromJson<ScoreDash>(it.readText(), ScoreDash::class.java))
 		}
 
-		return mockDelegate.returning(response).getScoreDashListLive(userId)
+		return mockDelegate.returning(response).getScoreDashLive(userId)
 	}
 }

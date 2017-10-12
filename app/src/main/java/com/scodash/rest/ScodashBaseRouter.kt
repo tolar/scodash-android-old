@@ -13,5 +13,5 @@ interface ScodashBaseRouter {
 	fun getScoreDashList(@Path("user_id") userId: Int): Single<Response<ScoreDash>>
 
 	@GET("scoreDash/{user_id}")
-	fun getScoreDashListLive(@Path("user_id") userId: Int): Call<List<ScoreDash>>
+	fun getScoreDashLive(@Path("user_id") userId: Int): Call<ScoreDash>
 }

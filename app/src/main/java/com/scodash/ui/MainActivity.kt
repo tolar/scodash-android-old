@@ -5,6 +5,7 @@ import android.arch.lifecycle.ViewModelProviders
 import android.databinding.DataBindingUtil
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.widget.Toast
 import com.scodash.R
 import com.scodash.databinding.ActivityMainBinding
 import com.scodash.entity.ScoreDashItem
@@ -35,8 +36,12 @@ class MainActivity : AppCompatActivity(), MainView, ScoreDashItemCallback {
 
 	private fun subscribeUi(mainViewModel: MainViewModel, scoreDashItemAdapter: ScoreDashItemAdapter) {
 		mainViewModel.loadIssues(1).observe(this, Observer { apiResponse ->
-			apiResponse?.values?.get(0)?.let { scoreDash ->
+
+			apiResponse?.value?.let { scoreDash ->
 				scoreDashItemAdapter.setProductList(scoreDash.itemList)
+			}
+			apiResponse?.error?.let {
+				Toast.makeText(this, it.message, Toast.LENGTH_SHORT).show()
 			}
 		})
 	}
