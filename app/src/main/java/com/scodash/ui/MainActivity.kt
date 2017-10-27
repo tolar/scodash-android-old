@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity(), MainView, ScoreDashItemCallback {
 		viewDataBinding = DataBindingUtil.setContentView(this, R.layout.activity_main)
 		viewDataBinding.viewModel = viewModel
 		viewDataBinding.scoreDashList.setAdapter(scoreDashItemAdapter)
+		viewDataBinding.appToolbar.title = getString(R.string.appName)
 		viewDataBinding.executePendingBindings()
 
 

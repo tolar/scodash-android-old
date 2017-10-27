@@ -14,21 +14,31 @@
 	</data>
 
 
-	<LinearLayout
+	<android.support.v7.widget.CardView
 		android:layout_width="match_parent"
 		android:layout_height="wrap_content"
-		android:orientation="horizontal">
+		android:minHeight="@dimen/global_spacing_80"
+		style="@style/Widget.ScodashTheme.CardView">
 
-		<TextView
-			android:id="@+id/header"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:layout_marginStart="@dimen/global_spacing_4"
-			android:layout_marginBottom="@dimen/global_spacing_4"
-			android:layout_marginTop="@dimen/global_spacing_4"
-			android:gravity="center"
-			android:text="@{scoDashItem.name}"
-			tools:text="@string/scoreDashItemText" />
+		<android.support.design.widget.CoordinatorLayout
+			android:layout_width="match_parent"
+			android:layout_height="match_parent">
 
-	</LinearLayout>
+
+			<TextView
+				android:id="@+id/header"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginStart="@dimen/global_spacing_4"
+				android:layout_marginBottom="@dimen/global_spacing_4"
+				android:layout_marginTop="@dimen/global_spacing_4"
+				android:gravity="center"
+				android:text="@{scoDashItem.name}"
+				tools:text="@string/scoreDashItemText" />
+
+
+		</android.support.design.widget.CoordinatorLayout>
+	</android.support.v7.widget.CardView>
+
+
 </layout>

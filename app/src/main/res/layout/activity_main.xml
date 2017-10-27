@@ -29,7 +29,7 @@
 				android:id="@+id/appToolbar"
 				android:layout_width="match_parent"
 				android:layout_height="?attr/actionBarSize"
-				app:theme="@style/ThemeOverlay.AppCompat.Scodash.ActionBar" />
+				app:theme="@style/Widget.ScodashTheme.ActionBar" />
 		</android.support.design.widget.AppBarLayout>
 
 		<LinearLayout
@@ -38,19 +38,32 @@
 			android:orientation="vertical">
 
 			<TextView
-				android:id="@+id/header"
-				android:layout_width="wrap_content"
+				android:id="@+id/listHeader"
+				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:layout_marginStart="@dimen/global_spacing_4"
-				android:layout_marginBottom="@dimen/global_spacing_4"
-				android:layout_marginTop="@dimen/global_spacing_4"
-				android:gravity="center"
-				android:text="@string/activityMainHeader" />
+				android:layout_marginTop="@dimen/global_spacing_32"
+				android:layout_marginStart="@dimen/global_spacing_32"
+				android:layout_marginEnd="@dimen/global_spacing_32"
+				android:text="@string/activityMainHeader"
+				android:textAlignment="center"
+				style="@style/TextAppearance.AppCompat.Headline" />
+
+			<TextView
+				android:id="@+id/listDescription"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="@dimen/global_spacing_32"
+				android:layout_marginStart="@dimen/global_spacing_32"
+				android:layout_marginEnd="@dimen/global_spacing_32"
+				android:text="@string/activityMainDescription"
+				android:textAlignment="center"
+				style="@style/TextAppearance.AppCompat.Subhead" />
 
 			<android.support.v7.widget.RecyclerView
 				android:id="@+id/scoreDashList"
 				android:layout_width="match_parent"
 				android:layout_height="match_parent"
+				android:paddingTop="@dimen/global_spacing_32"
 				android:contentDescription="@string/scoreDashList"
 				app:layoutManager="LinearLayoutManager"
 				tools:listitem="@layout/score_dash_item" />

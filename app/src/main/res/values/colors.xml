@@ -10,4 +10,9 @@
 	<color name="primaryTextColor">#000000</color>
 	<color name="secondaryTextColor">#000000</color>
 
+
+	<color name="global_bg_back">#ffffff</color>
+	<color name="global_bg_front">#ffffff</color>
+	<color name="global_bg_back_inverse_disabled">#dddddd</color>
+
 </resources>

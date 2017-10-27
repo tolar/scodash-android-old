@@ -1,15 +1,28 @@
 <resources>
 
+	<style name="Widget" />
+
 	<!-- Base application theme. -->
-	<style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+	<style name="Widget.ScodashTheme" parent="Theme.AppCompat.Light.NoActionBar">
 		<!-- Customize your theme here. -->
 		<item name="colorPrimary">@color/primaryColor</item>
 		<item name="colorPrimaryDark">@color/primaryDarkColor</item>
 		<item name="colorAccent">@color/secondaryColor</item>
 	</style>
 
+	<style name="Widget.ScodashTheme.CardView" parent="@style/Widget.ScodashTheme">
+		<item name="android:layout_marginLeft">@dimen/global_spacing_8</item>
+		<item name="android:layout_marginRight">@dimen/global_spacing_8</item>
+		<item name="android:layout_marginTop">@dimen/global_spacing_4</item>
+		<item name="android:layout_marginBottom">@dimen/global_spacing_4</item>
+		<item name="android:foreground">?attr/selectableItemBackground</item>
+		<item name="cardBackgroundColor">@color/global_bg_front</item>
+		<item name="cardCornerRadius">@dimen/card_corner_radius</item>
+		<item name="cardElevation">@dimen/global_elevation_2</item>
+		<item name="cardUseCompatPadding">true</item>
+	</style>
 
-	<style name="ThemeOverlay.AppCompat.Scodash.ActionBar" parent="ThemeOverlay.AppCompat.ActionBar">
+	<style name="Widget.ScodashTheme.ActionBar" parent="ThemeOverlay.AppCompat.ActionBar">
 		<!-- Used to for the title of the Toolbar -->
 		<item name="android:textColorPrimary">@color/primaryTextColor</item>
 		<!-- Used to for the title of the Toolbar when parent is Theme.AppCompat.Light -->

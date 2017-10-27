@@ -44,6 +44,15 @@
 	<dimen name="global_text_size_button">14sp</dimen>
 	<dimen name="global_text_size_menu">16sp</dimen>
 
+	<dimen name="global_elevation_0">0dp</dimen>
+	<dimen name="global_elevation_2">2dp</dimen>
+	<dimen name="global_elevation_4">4dp</dimen>
+	<dimen name="global_elevation_6">6dp</dimen>
+	<dimen name="global_elevation_8">8dp</dimen>
+	<dimen name="global_elevation_12">12dp</dimen>
+	<dimen name="global_elevation_16">16dp</dimen>
+	<dimen name="global_elevation_24">24dp</dimen>
+
 	<dimen name="blue_circle_button_size">@dimen/global_spacing_88</dimen>
 
 	<dimen name="card_elevation_resting">2dp</dimen>

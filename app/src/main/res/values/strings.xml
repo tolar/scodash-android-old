@@ -1,5 +1,7 @@
 <resources>
-	<string name="activityMainHeader">Header...</string>
+	<string name="appName">ScoreDash</string>
+	<string name="activityMainHeader">Simple on-line\n counting</string>
+	<string name="activityMainDescription">Further description goes here and here and here.</string>
 	<string name="scoreDashItemText">Text...</string>
 	<string name="scoreDashList">Score dash list</string>
 </resources>
