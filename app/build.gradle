@@ -40,6 +40,7 @@ android {
         //multiDexEnabled true
         resValue "string", "app_name", "Scodash"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
     }
 
     flavorDimensions "env"
