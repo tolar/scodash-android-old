@@ -52,7 +52,8 @@
 				app:layout_constraintHorizontal_bias="0.5"
 				app:layout_constraintEnd_toStartOf="@+id/count_number"
 				app:layout_constraintTop_toTopOf="parent"
-				app:layout_constraintBottom_toBottomOf="parent" />
+				app:layout_constraintBottom_toBottomOf="parent"
+				app:layout_constraintHorizontal_chainStyle="packed" />
 
 			<TextView
 				android:id="@+id/count_number"
@@ -61,7 +62,7 @@
 				android:layout_marginTop="8dp"
 				android:layout_marginBottom="8dp"
 				android:gravity="center"
-				android:text="12"
+				android:text="@string/_12"
 				style="@style/TextAppearance.AppCompat.Medium"
 				tools:text="12"
 				app:layout_constraintStart_toEndOf="@+id/dash_remove"
